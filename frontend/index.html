@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>QuickTrack | Home</title>
+        <link rel="icon" type="image/x-icon" href="assets/faviconlogo.jpeg">
+        <link rel="stylesheet" href="stylesheet.css">
+        <!--Page body-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <!--Button-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+        <!-- <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
+    </head>
+    <body>
+        <div class="bg-image">
+        </div>
+        <div class="bg-text">
+            <img src="assets/logonikbrab.jpeg" alt="logo">
+            <h1 class="ind-head">Your Digital Life Could Be Vulnerable!</h1>
+            <form action="./monitor/">
+           <button class="bt-index but">START MONITORING</button>
+            <p class="privacy-policy-in-index">We respect your privacy.<br>
+                Read our <a href="policy.html" target="_blank" class="ppol">Privacy Policy.</a>
+            </p>
+            <!-- <form action="/action_page.php"> -->
+                <input class="disclaimer" type="checkbox" id="disclaimer"></input>
+                <label class="disclaimer" for="disclaimer"> I have checked the <a href="disclaimer.html" class="dis-link">disclaimer</a> before proceeding.* (Required)</label><br>
+                <!-- <input type="submit" value="Submit"> -->
+            <!-- </form> -->
+            </form>
+        </div>
+        <div class="Email">
+            <p class="help-need">Need help? Reach us out!</p>
+            <a href="mailto:support@quicktrack.dev" target="_blank">
+                <img src="./assets/email_logo.jpeg" alt="Contact Email" class="Email">
+            </a>
+        </div>
+
+        <script>
+            document.getElementById("disclaimer").required = true;
+        </script>
+    </body>
+</html>

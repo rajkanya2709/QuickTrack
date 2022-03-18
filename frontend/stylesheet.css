@@ -1,0 +1,493 @@
+body {
+    background-color: black;
+    /* background-color: #8BC6EC; */
+    background-image: linear-gradient(225deg, white 0%, black 22%);
+
+}
+
+/* Index page */
+.bg-image {
+    background-image: url(../frontend/assets/nikback.jpg);
+    filter: blur(0px);
+    -webkit-filter: blur(3px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+    color: white;
+    border: 2px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.but {
+    font-family: 'Langar', cursive;
+    font-weight: bold;
+}
+
+.ind-head {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.bt-index {
+    width: auto;
+    height:auto;
+    background-color: black;
+    color: white;
+    padding: 0.5% 1%;
+    border: none;
+    font-size: 120%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    /* border-radius: 25px; */
+    background-color: #e7e7e7;
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.privacy-policy-in-index {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    opacity: 0.7;
+}
+
+.disclaimer {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.ppol {
+    text-decoration: underline;
+    color: white;
+}
+
+h1 {
+    padding-top: -20px;
+}
+
+.Email {
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 4%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.help-need {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    width: 200px;
+    transform: translate(-40%, 20%);
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+/* policy.html */
+.privacy {
+    font-size: 100px;
+}
+
+.policy {
+    font-size: 130%;
+    padding: 0 4%;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.link-section {
+    font-weight: bold;
+    font-size: 150%;
+    color: white;
+}
+.privpolicy {
+    /* background-color: black; */
+    padding: 20px 2%;
+    color: white;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.policybox {
+    padding: 2%;
+    height:50%;
+    width:auto;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+}
+
+.Q {
+    font-weight: bold;
+    font-size: 100%;
+}
+
+
+.Ans {
+    font-size: 100%;
+}
+
+
+/* Disclaimer Page  */
+.dis-container {
+    font-family: 'Baloo Paaji 2', cursive;
+    /* background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(10px); */
+    padding: 10% 15%;
+    width: auto;
+    color: white;
+}
+/* .dis-text {
+    background-color: white; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #f1f1f1;
+    text-align: center;
+} */
+.dis {
+    text-align: center;
+    color: white;
+    border: 2px solid #f1f1f1;
+}
+.dis-img {
+    /* padding-top: 5%; */
+    position: center;
+}
+.dis-head {
+    text-align: center;
+}
+.dis-p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 15%;
+    font-size: large;
+}
+.dis-link {
+    color: white;
+}
+
+
+
+
+
+/* monitor page  */
+
+.webtitle {
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    font-family: 'Aldrich', sans-serif;
+}
+
+input[type=email] {
+    color: black;
+    width: 200px;
+    padding: 10px 18px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    /* border-color: none; */
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+input[type=text] {
+    width: 200px;
+    color:black;
+    padding: 10px 18px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border-color: none;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+input[type=submit] {
+    width: auto;
+    height:auto;
+    background-color: black;
+    color: white;
+    padding: 0.5% 1%;
+    border: none;
+    font-size: 135%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+input:hover {
+    background-color: #e7e7e7;
+    color: black;
+    border: none;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.or {
+    font-family: 'Aldrich', sans-serif;
+}
+
+.bt-monitor {
+    height:auto;
+    width: auto;
+    background-color: black;
+    color: white;
+    padding: 0.5% 1%;
+    border: none;
+    font-size: 135%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.alert {
+    padding: 1% 2%;
+    margin: 0.5% 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MonitorMe Page */
+
+/* .webtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* @media only screen and (max-width:1000px){ */
+/* phone view : Small Screen (min-width:548px)*/    
+@media (max-width: 768px) {
+    /* index page  */
+    img {
+        width: 300px;
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 700px;
+    }
+  
+    .bt-index {
+        width: auto;
+        font-size: 35px;
+        background-color: #c0c0c0; /* Silver */
+        color: black;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .privacy-policy-in-index {
+        font-size: 50px;    
+    }
+
+    .disclaimer {
+        font-size: 25px;
+    }  
+
+    .Email {
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
+
+    .help-need {
+        top: 80%;
+        transform: translate(-40%, 4%);
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    /* Privacy Policy Page  */
+    /* .policybox{
+        height:400px;
+        width:100px;
+        border:1px solid #ccc;
+        font:16px/26px Georgia, Garamond, Serif;
+        overflow:auto;
+    } */
+    .e-link {
+        color: white;
+    }
+
+    /* Disclaimer Page  */
+    /* .dis {
+        text-align: center;
+        color: white;
+    }
+    .dis-head {
+        text-align: center;
+        color: white;
+    } */
+
+    .link-section {
+        font-weight: bold;
+        font-size: 180%;
+        color: white;
+        padding-top: 2%;
+    }
+
+    /* Monitor page  */
+    .webtitle {
+        font-size: 40px;
+    }
+    input[type=email] {
+        width: 330px;
+        font-size: 25px;
+    }
+    
+    input[type=text] {
+        width: 330px;
+        font-size: 25px;
+    }
+    
+    input[type=submit] {
+        font-size: 35px;
+    }
+    
+    .bt-monitor {
+        font-size: 35px;
+    }
+    h4 {
+        font-size: 25px;
+    }
+    /* MonitorMe Page */
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet view : Medium Screen and (min-width: 769px)*/
+@media only screen and (max-width: 992px) {
+
+/* Tablet view : Medium Screen */
+/* @media only screen and (max-width: 768px) and (min-width: 577px) { */
+    /* index page  */
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .bt-index {
+        width: auto;
+        font-size: 25px;
+        background-color: #c0c0c0; /* Silver */
+        color: black;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .privacy-policy-in-index {
+        font-size: 15px;
+        
+    }
+
+    .disclaimer {
+        font-size: 20px;
+    }
+
+    .Email {
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .help-need {
+        /* top:90%; */
+        transform: translate(-40%, 14%);
+    }
+
+    .link-section {
+        font-weight: bold;
+        font-size: 180%;
+        color: white;
+    }
+
+
+
+    /* Monitor page  */
+    .webtitle {
+        font-size: 50px;
+    }
+    input[type=email] {
+        width: auto;
+        font-size: 20px;
+    }
+    
+    input[type=text] {
+        width: auto;
+        font-size: 20px;
+    }
+    
+    input[type=submit] {
+        width: auto;
+        font-size: 30px;
+        background-color: #c0c0c0; /* Silver */
+        color: black;
+    }
+
+    input:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .bt-monitor {
+        width: auto;
+        font-size: 30px;
+        background-color: #c0c0c0; /* Silver */
+        color: black;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    /* MonitorMe Page */
+    
+    .alert {
+        font-size: 150%;
+    }
+  }
+
+
+
+
+
+  
+
