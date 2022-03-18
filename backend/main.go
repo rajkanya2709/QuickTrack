@@ -61,7 +61,7 @@ func sendmail(emailaddr string, body string) {
 	m.SetBody("text/html", body)
 
 	// Settings for SMTP server
-	d := gomail.NewDialer("smtp.gmail.com", 587, "your-email-here", "your-password-here") //Quick_track1
+	d := gomail.NewDialer("smtp.gmail.com", 587, "your-email-here", "your-password-here")
 
 	// This is only needed when SSL/TLS certificate is not valid on server.
 	// In production this should be set to false.
