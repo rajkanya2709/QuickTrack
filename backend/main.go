@@ -49,7 +49,7 @@ func sendmail(emailaddr string, body string) {
 	m := gomail.NewMessage()
 
 	// Set E-Mail sender
-	m.SetHeader("From", "sender-email")
+	m.SetHeader("From", "sender-email@email.com")
 
 	// Set E-Mail receivers
 	m.SetHeader("To", emailaddr)
@@ -136,10 +136,12 @@ func shodan(emailid string, targetip string) {
 	            <div style="background-color: rgb(238, 238, 238);">
 	            <img src="https://i.postimg.cc/rwHgysX9/Untitled-design-5.png" style="display: block; margin-left: auto; margin-right: auto;">
 	            </div>
+				<br>
                 <div style="background-color: rgb(247, 247, 247); padding-top: 30px; padding-left: 40px;">
+				<center><h1>Scan Report</h1></center>
 	            Dear User, <br><br>
                 
-                QuickTrack has successfully finished with the scan at <b>` + currenttime.Format("2006-01-02 15:04:05") + `</b> and here is your weekly report for the target IP address (<b>` + targetip + `</b>):
+                QuickTrack has successfully finished with the scan at <b>` + currenttime.Format("2006-01-02 15:04:05") + ` (UTC)</b> and here is your weekly report for the target IP address (<b>` + targetip + `</b>):
                 <br><br>
                 <b>Hostnames Discovered: </b>` + hostnames + `
                 <br>
@@ -151,9 +153,11 @@ func shodan(emailid string, targetip string) {
                 <br>
                 <b>Vulnerabilities Discovered: </b>` + Vulnerabilities + `
                 <br><br>
+				To unsubscribe from this scanning list, reply us on this <a href="mailto:support@quicktrack.dev">Email</a> and we will get back to you as early as possible!
+                <br><br>
 				<p> 
 				<div style="float:left;">Regards,<br>QuickTrack Team<br><br></div>
-                <div style="float:right;"><img src="https://i.ibb.co/gvrwsFt/image.png" alt="image" border="0"></div>
+                <div style="float:right;"></div>
                 <div style="clear: left;"/>
                 </p>
 				</div>

@@ -25,18 +25,41 @@
     </head>
     <body>
     <?php
+
+        function validate_ip($ip){
+            //split ip address in to array by dot
+            $ip_segments = explode('.', $ip);
+            // Always 4 segments needed
+            if (count($ip_segments) !== 4) {
+                return FALSE;
+            }
+            // IP can not start with 0
+            if ($ip_segments[0][0] == '0'){
+                return FALSE;
+            }
+            // Check each segment
+            foreach ($ip_segments as $segment){
+            // IP segments must be digits and can not be
+            // longer than 3 digits or greater then 255
+                if ($segment == '' OR preg_match("/[^0-9]/", $segment) OR $segment > 255 OR strlen($segment) > 3){
+                    return FALSE;
+                }
+            }
+            return TRUE;
+        }
+
         error_reporting(0); 
         $email = $_GET["email"];
     if (!isset($email)) {
     } else {
-        if(validate_email($email)) {
-            $ip = getenv('HTTP_CLIENT_IP')?:
-            getenv('HTTP_X_FORWARDED_FOR')?:
-            getenv('HTTP_X_FORWARDED')?:
-            getenv('HTTP_FORWARDED_FOR')?:
-            getenv('HTTP_FORWARDED')?:
-            getenv('REMOTE_ADDR');
-        
+        $ip = getenv('HTTP_CLIENT_IP')?:
+        getenv('HTTP_X_FORWARDED_FOR')?:
+        getenv('HTTP_X_FORWARDED')?:
+        getenv('HTTP_FORWARDED_FOR')?:
+        getenv('HTTP_FORWARDED')?:
+        getenv('REMOTE_ADDR');
+    
+        if(validate_email($email) && validate_ip($ip)){
             $backendquery = "/var/www/html/gosolutionchallenge/backend/quicktrack -ip=" . (string) $ip . " -email=" . (string) $email;
             exec($backendquery);
             echo `<br><br>`;
@@ -50,7 +73,7 @@
             echo `<br>`;
             echo '<div class="alert alert-danger alert-dismissible fade in">';
             echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            echo '<strong>Warning!</strong> You have provided an Invalid Email or IP Address! Please try again and make sure that your public IP address is in IPv4 and not IPv6 format.';
+            echo '<strong>Warning!</strong> Please make sure that you have provided a valid Email and your default IP is in IPv4 format and not IPv6.';
             echo '</div>';
         }
     }

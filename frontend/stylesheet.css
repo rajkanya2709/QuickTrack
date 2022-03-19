@@ -1,8 +1,5 @@
 body {
     background-color: black;
-    /* background-color: #8BC6EC; */
-    background-image: linear-gradient(225deg, white 0%, black 22%);
-
 }
 
 /* Index page */
@@ -102,8 +99,18 @@ h1 {
 
 
 /* policy.html */
+.privpolicy {
+    /* background-color: black; */
+    padding: 20px 2%;
+    color: white;
+    background-color: black;
+    background-image: linear-gradient(225deg, white 0%, black 18%);
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
 .privacy {
     font-size: 100px;
+    
 }
 
 .policy {
@@ -119,12 +126,6 @@ h1 {
     font-weight: bold;
     font-size: 150%;
     color: white;
-}
-.privpolicy {
-    /* background-color: black; */
-    padding: 20px 2%;
-    color: white;
-    font-family: 'Baloo Paaji 2', cursive;
 }
 
 .policybox {
@@ -148,6 +149,11 @@ h1 {
 
 
 /* Disclaimer Page  */
+.dis-body {
+    background-color: black;
+    background-image: linear-gradient(225deg, white 0%, black 18%);
+
+}
 .dis-container {
     font-family: 'Baloo Paaji 2', cursive;
     /* background: rgba(0,0,0,0.8);
