@@ -47,7 +47,7 @@ The only file which would require manual configuration is <a href="./backend/mai
   ```
 
 * ## Edit 2
-  You have to edit line no. 203 that stores the SQL DB configuration for the tool's database.
+  You have to edit line no. 172 and line no. 207 that stores the SQL DB configuration for the tool's database.
 
   Example Config:
   ```go
