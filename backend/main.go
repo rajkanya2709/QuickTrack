@@ -182,7 +182,7 @@ func fullscan() {
 		fmt.Println(err.Error())
 	}
 
-	rows, err := db.Query("SELECT Email, IP FROM quicktrack")
+	rows, err := db.Query("SELECT DISTINCT Email, IP FROM quicktrack")
 	if err != nil {
 		log.Println(err)
 	}
