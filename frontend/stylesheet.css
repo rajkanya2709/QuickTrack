@@ -28,6 +28,21 @@ body {
     text-align: center;
 }
 
+.bg-index {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+    color: white;
+    border: 2px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
 .but {
     font-family: 'Langar', cursive;
     font-weight: bold;
@@ -50,7 +65,6 @@ body {
 }
 
 button:hover {
-    /* border-radius: 25px; */
     background-color: #e7e7e7;
     color: black;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -88,6 +102,7 @@ h1 {
     height: 50px;
 }
 
+
 .help-need {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
@@ -100,7 +115,6 @@ h1 {
 
 /* policy.html */
 .privpolicy {
-    /* background-color: black; */
     padding: 20px 2%;
     color: white;
     background-color: black;
@@ -152,29 +166,25 @@ h1 {
 .dis-body {
     background-color: black;
     background-image: linear-gradient(225deg, white 0%, black 18%);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
 
 }
 .dis-container {
     font-family: 'Baloo Paaji 2', cursive;
-    /* background: rgba(0,0,0,0.8);
-    backdrop-filter: saturate(180%) blur(10px); */
-    padding: 10% 15%;
     width: auto;
-    color: white;
+    padding: 10% 10%;
+    color: white; 
 }
-/* .dis-text {
-    background-color: white; 
-    background-color: rgba(255, 255, 255, 0.5);
-    border: 2px solid #f1f1f1;
-    text-align: center;
-} */
 .dis {
     text-align: center;
     color: white;
     border: 2px solid #f1f1f1;
 }
 .dis-img {
-    /* padding-top: 5%; */
     position: center;
 }
 .dis-head {
@@ -182,7 +192,7 @@ h1 {
 }
 .dis-p {
     font-family: Arial, Helvetica, sans-serif;
-    padding: 0 15%;
+    padding: 0 10%;
     font-size: large;
 }
 .dis-link {
@@ -190,13 +200,8 @@ h1 {
 }
 
 
-
-
-
 /* monitor page  */
-
 .webtitle {
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-family: 'Aldrich', sans-serif;
 }
 
@@ -206,7 +211,6 @@ input[type=email] {
     padding: 10px 18px;
     margin: 6px 0;
     box-sizing: border-box;
-    /* border-color: none; */
     border: none;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
 }
@@ -263,23 +267,114 @@ input:hover {
 }
 
 /* MonitorMe Page */
+@media (min-width:1024px) {
+    .bg-index {
+        top: 45%;
+    }
+    .bg-text {
+        top: 55%;
+    }
+    /* Disclaimer */
+    .dis-container {
+        padding: 5% 10%;
+        margin: auto;
+        width: auto;
+        color: white; 
+    }
+}
 
-/* .webtitle {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-} */
+@media (min-width: 769px) and (max-width: 992px) {
+   /* index page  */
+    img {
+        width: 250px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .bt-index {
+        width: auto;
+        font-size: 25px;
+        background-color: #c0c0c0;
+        color: black;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .privacy-policy-in-index {
+        font-size: 15px;
+        
+    }
+
+    .disclaimer {
+        font-size: 20px;
+    }
+
+    .Email {
+        top: 77%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .help-need {
+        transform: translate(-40%, 14%);
+    }
+
+    .link-section {
+        font-weight: bold;
+        font-size: 180%;
+        color: white;
+    }
 
 
 
+    /* Monitor page  */
+    .webtitle {
+        font-size: 50px;
+    }
+    input[type=email] {
+        width: auto;
+        font-size: 20px;
+    }
+    
+    input[type=text] {
+        width: auto;
+        font-size: 20px;
+    }
+    
+    input[type=submit] {
+        width: auto;
+        font-size: 30px;
+        background-color: #c0c0c0; /* Silver */
+        color: black;
+    }
 
+    input:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    .bt-monitor {
+        width: auto;
+        font-size: 30px;
+        background-color: #c0c0c0; /* Silver */
+        color: black;
+    }
+    h4 {
+        font-size: 22px;
+    }
 
-
-
-
-
-
-
-/* @media only screen and (max-width:1000px){ */
-/* phone view : Small Screen (min-width:548px)*/    
+    /* MonitorMe Page */
+    .alert {
+        font-size: 150%;
+    }
+  }
+   
 @media (max-width: 768px) {
     /* index page  */
     img {
@@ -327,27 +422,9 @@ input:hover {
     }
 
     /* Privacy Policy Page  */
-    /* .policybox{
-        height:400px;
-        width:100px;
-        border:1px solid #ccc;
-        font:16px/26px Georgia, Garamond, Serif;
-        overflow:auto;
-    } */
     .e-link {
         color: white;
     }
-
-    /* Disclaimer Page  */
-    /* .dis {
-        text-align: center;
-        color: white;
-    }
-    .dis-head {
-        text-align: center;
-        color: white;
-    } */
-
     .link-section {
         font-weight: bold;
         font-size: 180%;
@@ -378,122 +455,5 @@ input:hover {
     }
     h4 {
         font-size: 25px;
-    }
-    /* MonitorMe Page */
-    
+    }    
   }
-
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet view : Medium Screen and (min-width: 769px)*/
-@media only screen and (max-width: 992px) {
-
-/* Tablet view : Medium Screen */
-/* @media only screen and (max-width: 768px) and (min-width: 577px) { */
-    /* index page  */
-    img {
-        width: 250px;
-        height: 200px;
-    }
-
-    h1 {
-        font-size: 42px;
-    }
-
-    .bt-index {
-        width: auto;
-        font-size: 25px;
-        background-color: #c0c0c0; /* Silver */
-        color: black;
-    }
-
-    button:hover {
-        background-color: black;
-        color: white;
-    }
-
-    .privacy-policy-in-index {
-        font-size: 15px;
-        
-    }
-
-    .disclaimer {
-        font-size: 20px;
-    }
-
-    .Email {
-        top: 77%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }
-
-    .help-need {
-        /* top:90%; */
-        transform: translate(-40%, 14%);
-    }
-
-    .link-section {
-        font-weight: bold;
-        font-size: 180%;
-        color: white;
-    }
-
-
-
-    /* Monitor page  */
-    .webtitle {
-        font-size: 50px;
-    }
-    input[type=email] {
-        width: auto;
-        font-size: 20px;
-    }
-    
-    input[type=text] {
-        width: auto;
-        font-size: 20px;
-    }
-    
-    input[type=submit] {
-        width: auto;
-        font-size: 30px;
-        background-color: #c0c0c0; /* Silver */
-        color: black;
-    }
-
-    input:hover {
-        background-color: black;
-        color: white;
-    }
-    
-    .bt-monitor {
-        width: auto;
-        font-size: 30px;
-        background-color: #c0c0c0; /* Silver */
-        color: black;
-    }
-    h4 {
-        font-size: 22px;
-    }
-    /* MonitorMe Page */
-    
-    .alert {
-        font-size: 150%;
-    }
-  }
-
-
-
-
-
-  
-
