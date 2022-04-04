@@ -15,6 +15,8 @@ Currently, we offer to monitor only IPv4 addresses and we scan for stuff such as
 
 An auto-generated report which is sent to the user after the first scan and then every consecutive week, would look like <a href="./frontend/assets/report.PNG">this</a>.
 
+# Note
+The database from where we pull the data is updated on a weekly basis so you might not see immediate results for your IP address and you'd have to wait for the recently opened/closed ports to be updated. Same goes for IP addresses of mobile phones / routers. You might not see open ports/services in your report sometimes and the reason is that the crawler only looks for the top 1500 ports (mostly used ones) and rest of them might get ignored.
 
 # Setup
 In order to run QuickTrack locally on your machine either in CLI or GUI mode, you should first meet these requirements:
