@@ -73,7 +73,7 @@
             echo `<br>`;
             echo '<div class="alert alert-danger alert-dismissible fade in">';
             echo '<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>';
-            echo '<strong>Warning!</strong> Please make sure that you have provided a valid Email and your default IP is in IPv4 format and not IPv6.';
+            echo '<strong>Warning!</strong> Please make sure that you have provided a valid Email and your public IP is in IPv4 format and not IPv6. You can check your public IP <u><a href="https://whatismyipaddress.com/">here</a></u>.';
             echo '</div>';
         }
     }
